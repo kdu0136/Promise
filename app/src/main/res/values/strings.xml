@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Promise</string>
+    <string name="facebook_app_id">1650776475222172</string>
+    <string name="daum_api_key">ced88b921d288e03ed25a7f41460bf1b</string>
+    <!--<string name="google_api_key">AIzaSyAwQjlRZR4Q9r-RRM3JDEmJF2qMfJoitik</string>-->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_section1">Tab 1</string>
+    <string name="title_section2">Tab 2</string>
+    <string name="title_section3">Tab 3</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "460361596168",
+    "firebase_url": "https://promise-9513a.firebaseio.com",
+    "project_id": "promise-9513a",
+    "storage_bucket": "promise-9513a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460361596168:android:b52f828dd64d2018",
+        "android_client_info": {
+          "package_name": "com.example.kimdongun.promise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460361596168-ous0251s80g2ol611v3prssp87jhdiql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlp_pY4D5-iRX2L1BHAmX-gFtJ8TyJCGA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search_option"
+        android:title="검색 옵션"
+        android:orderInCategory="100"
+        app:showAsAction="always" >
+        <menu>
+            <group>
+                <item android:id="@+id/search_place"
+                    android:title="장소 검색"
+                    android:checkable="true"
+                    android:checked="false"/>
+                <item android:id="@+id/search_content"
+                    android:title="내용 검색"
+                    android:checkable="true"
+                    android:checked="false"/>
+                <item android:id="@+id/search_date"
+                    android:title="날짜 검색"
+                    android:checkable="true"
+                    android:checked="false"/>
+            </group>
+        </menu>
+    </item>
+</menu>

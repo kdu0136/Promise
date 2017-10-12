@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kimdongun.promise.Social.AddFriendActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+            <SearchView
+                android:id="@+id/searchView"
+                android:queryHint="이메일을 입력해 주세요"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rect_shape"
+                android:focusable="false"
+                android:iconifiedByDefault="false">
+            </SearchView>
+        <ImageView
+            android:id="@+id/buttonSearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_search">
+        </ImageView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="검색 결과가 없습니다"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:id="@+id/textView_noFind"
+            android:visibility="invisible"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:divider="@null"
+            android:dividerHeight="3dp"
+            android:id="@+id/listView"/>
+
+    </FrameLayout>
+
+</LinearLayout>

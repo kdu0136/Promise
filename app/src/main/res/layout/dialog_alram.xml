@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_shape"
+    android:orientation="horizontal">
+
+    <EditText
+        android:layout_marginStart="10dp"
+        android:text="60"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:maxLength="3"
+        android:inputType="number"
+        android:id="@+id/editText_time"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:layout_marginStart="10dp"
+        android:text="분 전 알람"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"/>
+    <Button
+        android:id="@+id/button_commit"
+        android:textSize="10sp"
+        android:text="수정"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:textStyle="normal|bold"/>
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginTop="2dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp">
+
+
+    <ImageView
+        android:id="@+id/imageVeiw_back"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/itemlist_shape"/>
+
+    <ImageView
+        android:id="@+id/imageView_day_back"
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/itemlist_shape_day"/>
+
+    <ImageView
+        android:id="@+id/imageView_d_day"
+        android:background="@drawable/ic_day"
+        android:backgroundTint="@color/colorItemBack"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_alignStart="@+id/imageView_day_back"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView_d_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D-365"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:lines="1"
+        android:ellipsize="end"
+        android:scaleType="fitXY"
+        android:textColor="@color/colorAccent"
+        android:textStyle="normal|bold"
+        android:layout_alignStart="@+id/imageView_d_day"
+        android:layout_alignEnd="@+id/imageView_d_day"
+        android:layout_alignBottom="@+id/imageView_d_day"
+        android:layout_marginBottom="13dp"/>
+
+    <TextView
+        android:id="@+id/textView_isStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미 출발"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/imageView_d_day"
+        android:layout_alignStart="@+id/imageView_d_day"
+        android:layout_alignEnd="@+id/imageView_d_day"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_alram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/tableLayout"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_alarm"
+            android:backgroundTint="@color/colorAccent"
+            android:id="@+id/imageView_alram"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_alram"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            android:text="60분 전"
+            android:textSize="12.5sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView_day_back"
+        android:layout_toStartOf="@+id/layout_alram"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:gravity="center"
+            android:text="2016/12/31"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_date"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:gravity="center"
+            android:text="20:20"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_time"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:shrinkColumns="1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/layout_date"
+        android:layout_toEndOf="@+id/imageView_day_back"
+        android:layout_toStartOf="@+id/layout_alram"
+        android:layout_marginStart="5dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="내용 : "
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:text="내용 없음"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:maxLength="20"
+                android:id="@+id/textView_content"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="장소 : "
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:text="상도3동 293-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:maxLength="20"
+                android:id="@+id/textView_place"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="주최자 : "
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:text="이름"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:maxLength="20"
+                android:id="@+id/textView_sponsor"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

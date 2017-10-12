@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditListActivity">
+
+    <item android:id="@+id/action_refuse"
+        android:title="거절"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_add"
+        android:title="수락"
+        app:showAsAction="always" />
+
+</menu>
