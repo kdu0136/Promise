@@ -58,6 +58,10 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     private int facebook_count;
 
+    final private String[] mails = {"kdu0100@nate.com", "kimdongun1127@gmail.com", "kdu0136@gmail.com"};
+    final private String[] names = {"김동언", "dongun Kim", "kdu0136"};
+    final private String[] types = {"facebook", "google", "google"};
+
     //구글 버튼 텍스트 변경
     protected void setGooglePlusButtonText(SignInButton signInButton, String buttonText) {
         // Find the TextView that is inside of the SignInButton and set its text
@@ -233,12 +237,15 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button_login_google: //구글 로그인 터치
-                mGoogleApiClient.connect();
+//                mGoogleApiClient.connect();
+//                successLogin(mails[1], names[1], types[1]); //kimdongun1127@gamil.com
+                successLogin(mails[2], names[2], types[2]); //kdu0136@gmail.com
                 break;
 
             case R.id.button_login_facebook: //페이스북 로그인 터치
-                Log.i("TAG", "facebook touch");
-                loginFacebook();
+//                Log.i("TAG", "facebook touch");
+//                loginFacebook();
+                successLogin(mails[0], names[0], types[0]); //kdu0100@nate.com
                 break;
         }
     }
